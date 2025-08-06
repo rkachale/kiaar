@@ -5,7 +5,7 @@
             <img data-lazy="<?=base_url()?>/assets/kiaar-web/images/homepage/mobhomebanner.png" src="<?=base_url()?>/assets/kiaar-web/images/homepage/mobhomebanner.png" alt="" class="w-100 mobhmbanner lazyloadimg">
 
             <div class="impactareas">
-                <h2 class="subheading">Our Impact Areas</h2>
+                <h2 class="subheading">Our Impact Areas 1</h2>
                 <ul class="impact-list">
                     <li>
                         <a href="<?=base_url().$lang?>/sustainable-sugarcane-production/">
