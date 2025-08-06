@@ -1,0 +1,55 @@
+volumes:
+  datafiles:
+
+networks:
+  my-network:
+    driver: bridge
+
+services:
+  mysql:
+    image: mysql:8.0.40
+    container_name: kiaar-db
+    environment:     
+      MYSQL_ROOT_PASSWORD: test123
+      MYSQL_DATABASE: kiaar-stage
+      MYSQL_USER: arigel
+      MYSQL_PASSWORD: "t)2D#+qDgkG8U-MN"
+    ports:
+      - "3307:3306"  #Host:Container
+    networks:
+      - my-network
+    volumes:
+      - datafiles:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+
+  website:
+    container_name: kiaar-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      ENV: local  # Change to 'production' on AWS
+      MYSQL_DBHOST: rds19may2025.cfuahjovyrht.ap-south-1.rds.amazonaws.com
+      MYSQL_DATABASE: kiaar-stage
+      MYSQL_DBUSER: arigel
+      MYSQL_DBPASS: "t)2D#+qDgkG8U-MN"
+
+    networks:
+      - my-network
+    ports:
+      - "8001:80"
+    depends_on:
+      - mysql
+
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - "8002:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    depends_on:
+      - mysql

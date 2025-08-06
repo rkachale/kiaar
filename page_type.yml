@@ -1,0 +1,108 @@
+#
+# *******************************************************************************************************
+# * Standard Type
+# *******************************************************************************************************
+# ID[This is just a number and use it in database]:
+#   id: [Repeat ID]
+#   name: "[Choose a name for select in admin side]"
+#   extensions_fields:
+#     icon |>choose an icon for extensions in admin side
+#     image |>upload an image for extensions in admin side
+#     description |>insert a long text for extensions in admin side
+#     full_description |>insert another long text for extensions in admin side
+#   theme: '[Used in page(Root: called in main template php file)]'
+#   theme_preview: '[Used in index(Root: views/)]'
+#   theme_extension: '[Used in one extension view(Root: called in main template php file)]'
+#   theme_ajax: '[Used in ajax extension load(Root: called in main template php file)]'
+# *******************************************************************************************************
+# * You can add new item here and use in your controller file
+#
+1:
+  id: 1
+  name: "About"
+  fields:
+    extension:
+      icon
+      description
+      order
+    page:
+      order
+      image
+  preview:
+    limit: 1
+  theme: "page_type/about"
+
+2:
+  id: 2
+  name: "Contact Section"
+  fields:
+    extension:
+      icon
+      description
+      order
+    page:
+      order
+      image
+  preview:
+    limit: 1
+  theme: "page_type/contact"
+
+3:
+  id: 3
+  name: "Gallery"
+  fields:
+    extension:
+      icon
+      description
+      order
+    page:
+      order
+      image
+  preview:
+    limit: 1
+  theme: "page_type/gallery"
+
+4:
+  id: 4
+  name: "Events Section"
+  fields:
+    extension:
+      icon
+      description
+      order
+    page:
+      order
+      image
+  preview:
+    limit: 1
+  theme: "page_type/events"
+
+5:
+  id: 5
+  name: "About Kiaar"
+  fields:
+    extension:
+      icon
+      description
+      order
+    page:
+      order
+      image
+  preview:
+    limit: 1
+  theme: "page_type/about-kiaar"
+
+6:
+  id: 6
+  name: "Nabard Farmers"
+  fields:
+    extension:
+      icon
+      description
+      order
+    page:
+      order
+      image
+  preview:
+    limit: 1
+  theme: "page_type/nabard-farmers"

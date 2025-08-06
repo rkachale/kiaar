@@ -1,0 +1,58 @@
+@import "variables";
+%mainheading {
+  color: $brown;
+  font-size: 35px;
+  line-height: 33px;
+  font-family: "Raleway-Bold";
+  margin-bottom: 20px;
+}
+%subheading {
+  color: $brown;
+  font-size: 25px;
+  line-height: 33px;
+  font-family: "Raleway-Bold";
+  margin-bottom: 20px;
+}
+%brownbtn {
+  background-color: $lightbrown;
+  color: $white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: $brown;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  %mainheading {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  %brownbtn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  %mainheading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  %mainheading {
+    font-size: 24px;
+    line-height: 32px;
+ 
+  }
+}
+@media only screen and (max-width: 480px) {
+  %mainheading {
+    font-size: 20px;
+    line-height: 30px;
+ 
+  }
+}

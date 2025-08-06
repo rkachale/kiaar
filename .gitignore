@@ -1,0 +1,14 @@
+*/config/development
+*/logs/log-*.php
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+*/cache/!.htaccess
+.htaccess
+/kiaar/logs/*
+/kiaar/language/English/*
+/kiaar/language/Hindi/*
+/kiaar/language/Marathi/*
+/upload_file/images20/*
+/upload_file/banner_images/*
+/upload_file/videos/*

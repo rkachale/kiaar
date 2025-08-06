@@ -1,0 +1,4038 @@
+@import "variables";
+@import "extends";
+
+.about-introsec li {
+  list-style-type: disc;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: "Raleway-Regular";
+  margin-left: 20px;
+}
+
+.about-newsevents {
+  .news-sec {
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      font-size: 16px;
+      font-family: "Raleway-Regular";
+      line-height: 28px;
+
+    }
+  }
+}
+
+/*****Home page *****/
+.home-main {
+  width: 100%;
+  float: left;
+
+  .area-heading {
+    font-family: "Raleway-Medium";
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .about-newsevents {
+    margin: -100px 0 0 0;
+    background-color: $white;
+  }
+
+  .hm-bannersec {
+    width: 100%;
+    position: relative;
+    max-height: 1200px;
+
+    .mobhmbanner {
+      display: none;
+    }
+
+    .deskhmbanner {
+      display: block;
+    }
+
+    .impact-list li {
+      a:hover {
+        color: #000;
+      }
+    }
+
+    img {
+      position: relative;
+      max-height: 1200px;
+    }
+
+    .impactareas .impact-list li {
+      height: 70px;
+    }
+
+    .impactareas {
+      position: absolute;
+      border-top: 20px solid #ede1d9;
+      top: 42%;
+      left: -130px;
+      transform: translateY(-50%);
+      z-index: 1;
+      background-color: $yellow;
+      border-radius: 50%;
+
+      width: 650px;
+      height: 650px;
+
+      padding: 80px 70px 0 190px;
+    }
+
+    .servicesarea {
+      background-color: $orange;
+      width: 500px;
+      height: 500px;
+      position: absolute;
+
+      z-index: 1;
+      top: 45%;
+      left: 25%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      padding: 100px;
+
+      .impact-list {
+        li {
+          width: 100%;
+        }
+      }
+    }
+
+    .technologyarea {
+      background-color: $green;
+      width: 420px;
+      height: 420px;
+      position: absolute;
+      left: auto;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      padding: 100px 30px 100px 147px;
+      top: 36%;
+      right: 230px;
+      z-index: 1;
+
+      &:before {
+        content: "";
+        background-image: url(/assets/kiaar-web/images/homepage/hmintro-farmer.png);
+        width: 273px;
+        height: 273px;
+        position: absolute;
+        right: auto;
+        top: 70px;
+        left: -130px;
+      }
+
+      .impact-list {
+        li {
+          width: 100%;
+        }
+      }
+    }
+
+    .researcharea {
+      background-color: $brown;
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      left: auto;
+      transform: translateX(-42%);
+      border-radius: 50%;
+      padding: 150px 40px 0 70px;
+      top: auto;
+      right: 265px;
+      z-index: 0;
+      bottom: 85px;
+
+      .impact-list {
+        li {
+          width: 100%;
+        }
+      }
+    }
+
+    .impactareas,
+    .servicesarea,
+    .technologyarea,
+    .assistance-sec {
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .assistance-sec {
+      background-color: transparent;
+      width: 350px;
+      height: auto;
+      position: absolute;
+
+      left: auto;
+      transform: translateX(30%);
+      border-radius: 50%;
+      z-index: 1;
+      right: 150px;
+      top: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      .imgarea {
+        float: none;
+        margin: 0 auto 20px auto;
+      }
+    }
+
+    .impact-list {
+      li {
+        width: 50%;
+        float: left;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .imgarea {
+      width: 70px;
+      float: left;
+    }
+
+    .contentarea {
+      width: calc(100% - 70px);
+      float: left;
+    }
+
+    .inputbox {
+      border-left: 2px solid $brown;
+      padding: 10px 10px 0 20px;
+      float: left;
+      margin: -3px 0 0 25px;
+
+      &.fornabard {
+        border-left: 2px solid #F58220;
+
+        .inputs {
+          &:last-child {
+            &:after {
+              border: 9px solid #557A35;
+            }
+          }
+
+          &:before {
+            box-shadow: 0 0 0 2px #f58220;
+            background: #F58220;
+          }
+        }
+      }
+
+      .input-text {
+        color: $white;
+        padding-left: 20px;
+      }
+
+      .inputs {
+        position: relative;
+
+        &:last-child {
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 1;
+            left: -22px;
+            bottom: 0;
+            border: 9px solid #f58220;
+            border-width: 0 0 0 2px;
+            height: 67px;
+            bottom: -63px;
+          }
+        }
+
+        &:before {
+          box-shadow: 0 0 0 2px #603312;
+          left: -25px;
+          background: #603312;
+          border-radius: 50%;
+          height: 8px;
+          width: 8px;
+          content: "";
+          position: relative;
+          display: block;
+          top: 18px;
+        }
+      }
+    }
+  }
+}
+
+//common news events sec
+.about-newsevents {
+  margin: 0 0 0 0;
+  padding: 40px 0;
+  background-color: $lightgrey;
+
+  .subheading {
+    margin: 0;
+  }
+
+  .news-sec {
+    margin-top: 40px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .news-head {
+    font-family: "Raleway-Bold";
+    color: $brown;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .icon {
+    margin-right: 10px;
+    top: -3px;
+    position: relative;
+    width: 22px;
+    height: 30px;
+  }
+
+  .links-sec {
+    a {
+      position: relative;
+      padding-left: 40px;
+
+      &:before {
+        content: "";
+        background-image: url(/assets/kiaar-web/images/aboutpage/overlap-white.svg);
+        width: 20px;
+        height: 25px;
+        position: absolute;
+        left: 15px;
+        background-repeat: no-repeat;
+        background-position: center left;
+      }
+    }
+  }
+}
+
+.mtop30 {
+  margin-top: 30px;
+}
+
+.listmain {
+  &.reslist {
+    padding-right: 30px;
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
+  &.list16 {
+    li {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  li {
+    list-style-type: disc;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "Raleway-Regular";
+    margin-left: 20px;
+  }
+}
+
+.externalink {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    color: inherit;
+  }
+}
+
+/******ABout page ,General body page , Governing Council page, Staff page ,About Chairman Page*******/
+.about-main {
+  width: 100%;
+  float: left;
+
+  &.chairman {
+    .chcontentarea {
+      background: #f9f8f6;
+      margin-top: 40px;
+      padding: 30px;
+
+      .chsubheading {
+        font-size: 24px;
+        line-height: 41px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .unilogo {
+      width: 20%;
+      margin-bottom: 20px;
+    }
+
+    .innerwrap {
+      margin-bottom: 40px;
+    }
+
+    .svgimg {
+      width: 100%;
+    }
+
+    .iconsec {
+      justify-content: center;
+    }
+  }
+
+  .chparahead {
+    font-size: 16px;
+    line-height: 27px;
+    color: $green;
+    font-family: "Raleway-Semibold";
+  }
+
+  .chsubheading {
+    font-size: 30px;
+    line-height: 27px;
+    color: $green;
+    font-family: "Raleway-Semibold";
+
+    .subtext {
+      color: $black;
+      font-size: 16px;
+      line-height: 27px;
+      font-family: "Raleway-Regular";
+    }
+  }
+
+  .banner-sec {
+    max-height: 490px;
+  }
+
+  .about-introsec {
+    margin: 70px 0;
+    position: relative;
+
+    &.general-body {
+      margin: 100px 0 70px 0;
+    }
+
+    &.council {
+      &::before {
+        content: "";
+        background-image: url(/assets/kiaar-web/images/governing-council/bgvector.png);
+        width: 20%;
+        height: 565px;
+
+        position: absolute;
+        right: 0;
+        top: 50px;
+      }
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    &.council {
+      .greybox {
+        background-color: #fff;
+        border-bottom: none;
+        height: 130px;
+      }
+    }
+  }
+
+  //Contact us page
+  .contactus {
+    margin: 25px 0 70px 0;
+
+    .formheading {
+      font-size: 14px;
+      color: $black;
+      line-height: 21px;
+
+      font-family: "Raleway-Regular";
+    }
+
+    .contactbtn {
+      background-color: $green;
+      color: $white;
+      width: 100%;
+      float: left;
+      border: none;
+      outline: none;
+      padding: 10px 0;
+      cursor: pointer;
+
+      &:focus,
+      &:hover {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background-color: lighten($color: $green, $amount: 10);
+      }
+    }
+
+    .form-control {
+      border-radius: 0;
+
+      &:focus {
+        border: 1px solid #ced4da;
+      }
+    }
+
+    .cnttextarea {
+      border: 1px solid #ced4da;
+      width: 100%;
+      height: 120px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+
+    .bg-grey {
+      background-color: #f9f8f6;
+      padding: 30px;
+      margin-top: 40px;
+      font-family: "Raleway-Semibold";
+    }
+
+    .contactcard {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .imgbox {
+        width: calc(100% - 80%);
+        float: left;
+        justify-content: center;
+        display: flex;
+      }
+
+      .contentbox {
+        width: 80%;
+        float: left;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .bg-grey {
+    background-color: #f9f8f6;
+  }
+
+  .links-sec {
+    text-align: right;
+
+    a {
+      text-align: center;
+      @extend %brownbtn;
+    }
+  }
+
+  .abtinstimg {
+    margin-left: -23%;
+  }
+
+  .abtrightimg {
+    margin-right: -38%;
+  }
+
+  .greybox {
+    background-color: #f7f6f3;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 170px;
+
+    a {
+      width: 100%;
+      float: left;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      border-bottom: none;
+    }
+
+    .imgbox {
+      width: calc(100% - 80%);
+      float: left;
+      justify-content: center;
+      display: flex;
+    }
+
+    .contentbox {
+      width: 80%;
+      float: left;
+      padding-left: 20px;
+    }
+  }
+
+  .general-head {
+    font-family: "Raleway-Semibold";
+    font-size: 16px;
+    line-height: 33px;
+    color: $lightbrown;
+  }
+
+  p.desgn {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
+
+/*****modal design*****/
+.modalswrapper {
+  .close {
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  .modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 30px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+    line-height: 36px;
+    color: #603312;
+    font-family: "Raleway-Semibold";
+  }
+
+  .modal-design {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Raleway-Semibold";
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
+/*****Ogfarming pages ******/
+.og-table {
+
+  td,
+  th {
+    border: 1px solid #dee2e6;
+  }
+
+  .tbmainhead {
+    padding: 20px;
+    background: #eef1ea;
+    font-size: 18px;
+    font-family: "Raleway-Bold";
+    border: 1px solid #d1d0d0;
+    color: black;
+  }
+
+  .tbmainsubhead {
+    font-size: 14px;
+    font-family: "Raleway-Semibold";
+    background: #e4eadf;
+    border: 1px solid #d1d1d1;
+    color: black;
+  }
+
+  .tbmainfoot {
+    background: #f6eee9;
+    font-size: 14px;
+    font-family: "Raleway-Semibold";
+    color: $lightbrown;
+  }
+
+  .border-right-0 {
+    border-right: 0 !important;
+  }
+}
+
+.ogfarm-main {
+  margin: 0 0 70px 0;
+
+  .bgimgwrapper {
+    position: relative;
+    z-index: -1;
+    width: 400px;
+    height: 800px;
+    top: -104px;
+    right: -30px;
+    padding-top: 100px;
+  }
+
+  .soilist {
+    font-size: 16px;
+    line-height: 28px;
+
+    li {
+      list-style-type: disc;
+
+      font-family: "Raleway-Regular";
+      margin: 0 0 10px 20px;
+    }
+  }
+
+  .tot-subhead {
+    font-size: 24px;
+    line-height: 32px;
+    color: $green;
+    font-family: "Raleway-Bold";
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+
+    &.Literature {
+      &::before {
+        background-image: url(/assets/kiaar-web/images/transfer-of-technology/literacture-icon.svg);
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url(/assets/kiaar-web/images/transfer-of-technology/training-icon.svg);
+      width: 30px;
+      height: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 0;
+    }
+  }
+
+  .green-link {
+    color: #006699;
+  }
+
+  .subsubheading {
+    font-size: 14px;
+    font-family: "Raleway-Semibold";
+    line-height: 37px;
+    color: $yellow;
+  }
+
+  .nav-tabs {
+    border: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+
+    .nav-item {
+      margin: 0;
+      width: 100%;
+      border-bottom: 1px solid #979696;
+      border-width: 0.8px;
+    }
+  }
+
+  .ogsubhead {
+    font-size: 18px;
+    line-height: 30px;
+    color: $green;
+    font-family: "Raleway-Bold";
+    margin: 30px 0;
+  }
+
+  .ogtitle2 {
+    font-size: 16px;
+    line-height: 28px;
+    color: $black;
+    font-family: "Raleway-Semibold";
+    margin-bottom: 10px;
+  }
+
+  .tabslistwrapper {
+    background: $green;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 100px;
+
+    &::after {
+      content: "";
+      background: $green;
+      height: 100%;
+      width: 150px;
+      right: -120px;
+      top: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .subheading {
+      color: white;
+      padding-left: 30px;
+      position: relative;
+
+      &:before {
+        content: "";
+        background-image: url(/assets/kiaar-web/images/research/research-white-icon.svg);
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 0;
+      }
+    }
+
+    .nav-link {
+      color: $white;
+      opacity: 0.8;
+      border: none;
+      position: relative;
+      padding-left: 30px;
+
+      &::before {
+        content: "";
+        background-image: url(/assets/kiaar-web/images/research/arrow-white.svg);
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 0;
+        top: 5px;
+      }
+
+      &:hover,
+      &.active,
+      &:focus {
+        background: none;
+        color: white;
+        opacity: 1;
+        border: none;
+
+        &:hover {
+          background: none;
+          color: white;
+          opacity: 1;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.success_msg {
+  margin-top: 40px;
+  color: #03d103;
+  padding: 10px;
+  font-weight: bold;
+  font-family: "Raleway-Bold";
+}
+
+/******Publications page & Eminent Visitors page********/
+.publications-main {
+  margin: 0 0 70px 0;
+  width: 100%;
+  float: left;
+
+  .bannersec {
+    max-height: 450px;
+  }
+
+  .publication-card {
+    padding: 30px;
+    background-color: #f9f8f6;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .heading {
+    margin-bottom: 50px;
+  }
+
+  .maincontentarea {
+    margin: 40px 0 0 0;
+    width: 100%;
+    float: left;
+  }
+
+  .pbheading {
+    font-size: 24px;
+    line-height: 33px;
+    color: $green;
+    font-family: "Raleway-Semibold";
+    position: relative;
+    padding: 0 0 15px 50px;
+    border-bottom: 1px solid #ddd;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background-image: url(/assets/kiaar-web/images/publications/icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  ul {
+    padding: 10px 10px 0 30px;
+
+    li {
+      list-style-type: disc;
+      margin-bottom: 10px;
+      font-family: "Raleway-Regular";
+      font-size: 16px;
+      line-height: 28px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  p {
+    padding-top: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .visitors-area {
+    background: #f9f8f6;
+    padding: 30px 40px;
+  }
+
+  .visitors-list {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      padding-left: 70px;
+      position: relative;
+      padding: 20px 0 20px 70px;
+      border-bottom: 1px solid #ddd;
+
+      &:before {
+        position: absolute;
+        content: "";
+        background-image: url(/assets/kiaar-web/images/eminent-visitors/visitor-icon.svg);
+        width: 30px;
+        height: 30px;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    p {
+      padding-top: 5px;
+      line-height: 24px;
+    }
+  }
+
+  .visit-date {
+    font-size: 16px;
+    color: $brown;
+    font-family: "Raleway-Medium";
+  }
+}
+
+/*****NewsEvents Listing******/
+.newsevents-listingmain {
+  margin: 0 0 70px 0;
+  width: 100%;
+  float: left;
+
+  .heading {
+    margin-bottom: 50px;
+  }
+
+  .bannersec {
+    max-height: 530px;
+  }
+
+  .maincontentarea {
+    width: 100%;
+    float: left;
+  }
+
+  .events-card {
+    background-color: #f9f8f6;
+    padding: 30px 30px 30px 30px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+  }
+
+  .linksbox {
+    margin-top: 10px;
+  }
+
+  .news-link {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Raleway-Semibold";
+    color: $black;
+    position: relative;
+    padding: 0 0 0 25px;
+    text-decoration: underline;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background-image: url(/assets/kiaar-web/images/news-events/Arrow_Up_Right.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .news-date {
+    font-size: 16px;
+    line-height: 30px;
+    color: $brown;
+    font-family: "Raleway-Semibold";
+    position: relative;
+    padding: 0 0 15px 30px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background-image: url(/assets/kiaar-web/images/news-events/calendar-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .bg-grey {
+    padding: 30px;
+    background-color: #f9f8f6;
+
+    width: 100%;
+    float: left;
+  }
+
+  .news-heading {
+    font-size: 24px;
+    line-height: 33px;
+    color: $green;
+    font-family: "Raleway-Semibold";
+    position: relative;
+    padding: 5px 0 15px 50px;
+    border-bottom: 1px solid #ddd;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background-image: url(/assets/kiaar-web/images/news-events/heading-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+/***Directors Message page****/
+.dirctmsgmain {
+  &.foundingmain {
+    .greymsgsec {
+      padding: 70px 60px;
+    }
+  }
+
+  .msghead {
+    font-size: 20px;
+    line-height: 27px;
+    font-family: "Raleway-Medium";
+    color: $black;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .greymsgsec {
+    margin: 20px 0 60px 0;
+    background-image: url(/assets/kiaar-web/images/directors-message/bg.svg);
+    background-size: cover;
+    padding: 70px 30px 30px;
+  }
+
+  .membersbox {
+    background: $white;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .manhead {
+    font-family: "Raleway-Semibold";
+    font-size: 20px;
+    line-height: 30px;
+    color: $brown;
+  }
+
+  .manskhead {
+    font-family: "Raleway-Semibold";
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .manquote {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Raleway-Regular";
+    margin: 20px 0;
+  }
+}
+
+.brownhead {
+  font-family: "Raleway-Semibold";
+  color: $brown;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.sugimpactbox {
+  background: #f9f8f6;
+  padding: 20px;
+  margin: 40px 0 40px 0;
+
+  .sugsubhead {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Raleway-Semibold";
+    color: $black;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.missionsubhead {
+  font-size: 20px;
+  line-height: 24px;
+  color: $black;
+  font-family: "Raleway-Semibold";
+  margin-bottom: 10px;
+}
+
+/***Nabard home page start****/
+
+
+.top-sec img {
+  float: left;
+}
+
+.sec-two-main {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.sec-two-content {
+  float: left;
+  background-color: #F9F8F6;
+  border-radius: 10px;
+  padding: 30px 38px 40px;
+}
+
+.sec-two-content .text {
+  float: left;
+  font-size: 16px;
+  line-height: 29px;
+  color: #000000;
+  margin: 28px 0 15px;
+  font-family: "Raleway-Bold";
+}
+
+.search-by-data {
+  float: left;
+  width: 100%;
+}
+
+.search-content {
+  float: left;
+  width: 100%;
+}
+
+.search-content .search-col {
+  float: left;
+  width: calc((100% - 69px) / 4);
+  margin-right: 23px;
+}
+
+.search-content .search-col:last-child {
+  margin-right: 0;
+}
+
+.search-content .search-col .select2-container {
+  position: relative;
+}
+
+
+.search-content .search-col .select2-container:before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  background-image: url(/assets/kiaar-web/images/nabard/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 7px;
+  background-size: 12px;
+}
+
+.search-content .search-col .labels {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: "Raleway-Regular";
+}
+
+.search-content .search-col .user-input {
+  float: left;
+  width: 100%;
+  border: 1px solid #B2B2B2;
+  padding: 6px 12px;
+  height: 40px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.search-content .search-col .select2-container--default .select2-selection--multiple {
+  border: 1px solid #B2B2B2;
+  border-radius: 0;
+}
+
+.search-content .search-col .select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: 1px solid #B2B2B2;
+}
+
+.search-content .search-col .select2-results__option[aria-selected] {
+  font-family: "Raleway-Regular";
+}
+
+.search-content .search-col .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  font-family: "Raleway-Regular";
+}
+
+.search-by-data .btn-search {
+  float: left;
+  border: 0;
+  background-color: #557A35;
+  width: 125px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 24px;
+  margin-top: 14px;
+  cursor: pointer;
+  font-family: "Raleway-Semibold";
+}
+
+.search-by-data .btn-fields {
+  width: 100%;
+  float: left;
+}
+
+.search-by-data #btn_clear {
+  background-color: #eaeaeb;
+  color: #000;
+  margin-left: 20px;
+}
+
+.about-village-detail {
+  margin-top: 50px;
+}
+
+.farmer-table {
+  float: left;
+  width: 100%;
+  border: 1px solid #E3E9DD;
+
+}
+
+.farmer-table th {
+  padding: 25px 15px;
+  vertical-align: top;
+  background-color: #E3E9DD;
+  font-size: 14px;
+  color: #000000;
+  font-family: "Raleway-Semibold"
+}
+
+.farmer-table td {
+  padding: 25px 15px;
+  vertical-align: middle;
+  border-bottom: 1px solid #E3E9DD;
+  font-size: 14px;
+  color: #000000;
+  font-family: "Raleway-Regular";
+}
+
+.farmer-table td .farmer-img {
+  float: left;
+  width: 54px;
+  height: 54px;
+}
+
+.farmer-table td .farmer-img img {
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.farmer-table .bold-txt {
+  font-weight: bold;
+  vertical-align: top;
+  border-right: 1px solid #E3E9DD;
+}
+
+.farmer-table .view-farmer-detail {
+  width: 137px;
+  height: 36px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 36px;
+  color: #A25723;
+  position: relative;
+  background-color: #F6EEE9;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.farmer-table .view-farmer-detail::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  background-image: url(/assets/kiaar-web/images/nabard/detail-path.svg);
+  width: 16px;
+  height: 18px;
+  ;
+}
+
+.farmer-table .view-farmer-detail a {
+  text-decoration: none;
+  color: #A25723;
+}
+
+.about-vilaage-maps {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.village-column {
+  float: left;
+  width: 100%;
+}
+
+.village-column .head {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #E3E9DD;
+  padding: 18px 0 18px 15px;
+}
+
+.village-box {
+  float: left;
+  width: 100%;
+  margin-top: 25px;
+  padding: 0 10px 0 15px;
+}
+
+.village-box .village-data {
+  float: left;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.village-data .chk-radio {
+  display: none;
+}
+
+.village-data .chk-radio:checked~.radio-btn::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background-color: #A25723;
+  border-radius: 100%;
+}
+
+.village-data .chk-radio:checked~.village-name {
+  color: #A25723;
+}
+
+.village-data .radio-btn {
+  float: left;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 2px solid #707070;
+  position: relative;
+}
+
+.village-data .village-name {
+  float: left;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  padding-left: 12px;
+}
+
+.village-maps {
+  display: none;
+}
+
+.village-maps.active {
+  display: block;
+}
+
+.village-maps iframe {
+  width: 100%;
+  height: 450px;
+}
+
+.pagination {
+  float: right;
+  font-size: 16px;
+  display: inline-block;
+  clear: both;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pagination .of_result {
+  float: left;
+  color: #58595b;
+  font-family: "Raleway-Regular";
+}
+
+.pagination b {
+  background: #b7202e;
+  padding: 5px 10px;
+  border: 1px solid #b7202e;
+  color: #fff;
+  font-family: "Raleway-Bold";
+
+}
+
+.pagination a {
+  color: #069;
+  padding: 5px 10px;
+  border: 1px solid #e2e2e2;
+  background: #f6f6f7;
+  font-family: "Raleway-Regular";
+}
+
+.pagination a:hover {
+  color: #046;
+}
+
+/***Nabard home page end****/
+
+
+/***Nabard soil test page start****/
+
+.back-btn {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 18px;
+}
+
+.back-btn a {
+  font-size: 18px;
+  font-family: "Raleway-Regular";
+  color: #006699;
+  text-decoration: underline;
+  position: relative;
+}
+
+.back-btn a::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -16px;
+  border: solid #006699;
+  border-width: 0 2px 2px 0;
+  padding: 4px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.about-introsec .heading-block {
+  float: left;
+  width: 100%;
+}
+
+.heading-block {
+  float: left;
+}
+
+.heading-block .soil-icon {
+  float: left;
+  width: 33px;
+  margin-right: 9px;
+}
+
+.heading-block .subheading {
+  float: left;
+  width: calc(100% - 42px);
+}
+
+.sec-two-soiltest {
+  float: left;
+  margin-top: 20px;
+}
+
+.soiltest-content {
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  float: left;
+  width: 100%;
+
+}
+
+.info-content {
+  float: left;
+  width: 100%;
+  background-color: #F9F8F6;
+  padding: 20px;
+}
+
+.about-test {
+  column-count: 2;
+
+  @media (max-width:767px) {
+    column-count: 1 !important;
+  }
+}
+
+
+
+.user-info-data {
+  float: left;
+  width: 100%;
+}
+
+.user-info-data.test-info {
+  width: 100%;
+
+  @media (max-width:767px) {
+    width: 100% !important;
+  }
+}
+
+
+.user-info-data.test-info .text-value {
+  width: 70%;
+}
+
+.user-info-data .text {
+  float: left;
+  font-size: 16px;
+  line-height: 30px;
+  color: #A25723;
+  font-family: "Raleway-Bold";
+  width: 30%;
+}
+
+.user-info-data .text-value {
+  float: left;
+  width: calc(100% - 161px);
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Raleway-Semibold";
+}
+
+.soil-graph {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  // padding: 0 50px;
+}
+
+#graphdiv {
+  height: 500px;
+  font-family: "Raleway-Regular";
+  padding: 0;
+  display: none;
+}
+
+.soil-data {
+  float: left;
+  width: 100%;
+  display: flex;
+  padding: 0px 0px 40px 30px;
+  margin-top: 12px;
+}
+
+.table-data {
+  float: left;
+  width: 100%;
+  margin-right: 39px;
+}
+
+.table-data:last-child {
+  margin-right: 0;
+}
+
+.soilinfo-table {
+  width: 100%;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+.soilinfo-table th {
+  color: #A25723;
+  font-size: 16px;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  padding: 5px;
+  background-color: #F9F8F6;
+  width: 50%;
+  font-family: "Raleway-Bold";
+}
+
+.soilinfo-table td {
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  padding: 5px;
+  font-family: "Raleway-Semibold";
+}
+
+.sec-three-aboutcrop {
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+.select-year {
+  position: absolute;
+  right: 1%;
+  z-index: 9;
+  top: 0px;
+}
+
+// .select-year::after{
+//   content: '';
+//   position: absolute;
+//   top: 16px;
+//   right: 10px;
+
+//   width: 12px;
+//   height: 7px;
+//   background-size: 12px;
+// }
+
+.select-year .dropdown-select {
+  border: 1px solid #B2B2B2;
+  width: 237px;
+  border-radius: 0;
+  height: 40px;
+  font-size: 14px;
+  -webkit-appearance: unset;
+  padding: 8px 9px 8px 14px;
+  background: transparent;
+  font-family: "Raleway-Regular";
+  background-image: url(/assets/kiaar-web/images/nabard/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+  background-size: 12px;
+}
+
+.crop-year-content {
+  width: 100%;
+  background-color: #F9F8F6;
+  margin: 10px 15px 0;
+  padding: 30px 9px 0;
+}
+
+.crop-col {
+  width: 100%;
+  display: none;
+}
+
+.crop-col:first-child {
+  display: block;
+}
+
+.crop-mapping-detail {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.crop-box {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.crop-box .month-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 6px;
+  font-family: "Raleway-Semibold";
+}
+
+.crop-box .month-text::before {
+  content: '';
+  position: absolute;
+  background-image: url(/assets/kiaar-web/images/nabard/calender-icon.svg);
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+  top: 4px;
+  left: 0;
+}
+
+.crop-box .crop-detail {
+  width: 100%;
+  padding: 10px 14px 15px;
+  background-color: #E9FFBE;
+}
+
+.crop-box .crop-detail img {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+}
+
+.crop-box .crop-detail .view-all-text {
+  width: 101px;
+  height: 30px;
+  background-color: #557A35;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 15px;
+  position: relative;
+  text-align: right;
+  padding-right: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  font-family: "Raleway-Medium";
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.crop-box .crop-detail .view-all-text::before {
+  content: '';
+  position: absolute;
+  background-image: url(/assets/kiaar-web/images/nabard/gallery-icon.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 14px;
+  top: 9px;
+  left: 11px;
+}
+
+.zoom-icon {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.zoom-icon span {
+  width: 30px;
+  height: 30px;
+  background-color: #557A35;
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.zoom-icon span::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-image: url(/assets/kiaar-web/images/nabard/magnifying-icon.svg);
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+}
+
+#crop-modal .modal-dialog {
+  max-width: 90%;
+}
+
+
+.month-row {
+  margin: 0;
+  padding: 26px 0 0;
+}
+
+.close-icon {
+  position: absolute;
+  background-image: url(/assets/kiaar-web/images/nabard/cross-icon.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  right: 25px;
+}
+
+.crop-select-month-block {
+  padding: 0 26px;
+}
+
+.crop-select-month-block .subheading {
+  float: left;
+}
+
+.crop-month-content {
+  padding: 0 16px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.crop-month-col {
+  width: 100%;
+  display: none;
+}
+
+.crop-month-col:first-child {
+  display: block;
+}
+
+.select-month {
+  float: left;
+  position: relative;
+  margin-left: 28px;
+}
+
+.select-month::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  background-image: url(/assets/kiaar-web/images/nabard/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 7px;
+  background-size: 12px;
+}
+
+.select-month .dropdown-select {
+  border: 1px solid #B2B2B2;
+  width: 237px;
+  border-radius: 0;
+  height: 40px;
+  font-size: 14px;
+  -webkit-appearance: unset;
+  padding: 8px 14px;
+  background: transparent;
+  font-family: "Raleway-Regular";
+}
+
+.crop-month-col .crop-mapping-detail .crop-box {
+  margin-bottom: 32px;
+}
+
+.col-pd {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel-item .zoom-icon {
+  display: none;
+}
+
+#myModal .modal-dialog {
+  max-width: 65%;
+}
+
+#myModal .subheading {
+  margin: 0 16px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #A25723;
+}
+
+#modalCarousel .crop-detail {
+  padding: 0 70px;
+}
+
+.modal-data {
+  padding: 26px 10px 16px;
+  background-color: #E9FFBE;
+  border: 0;
+}
+
+.modal-data .modal-body {
+  padding-top: 30px;
+}
+
+.prev-icon {
+  opacity: 1;
+  left: -30px;
+}
+
+.next-icon {
+  opacity: 1;
+  right: -30px;
+}
+
+.prev-icon .carousel-control-prev-icon {
+  background-image: url(/assets/kiaar-web/images/nabard/g-arrow-left.svg);
+  width: 46px;
+  height: 46px;
+}
+
+.next-icon .carousel-control-next-icon {
+  background-image: url(/assets/kiaar-web/images/nabard/g-arrow-right.svg);
+  width: 46px;
+  height: 46px;
+}
+
+.fade-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll-body .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/***Nabard soil test page end****/
+
+
+/***login page start****/
+
+.login-section {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: -100px;
+}
+
+
+.login-content {
+  display: inline-block;
+  width: 771px;
+  background: #F9F8F6 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  padding: 40px 60px;
+  text-align: left;
+}
+
+.form-details-content {
+  width: 100%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.login-data {
+  float: left;
+  width: calc((100% - 70px) / 2);
+  margin-right: 70px;
+  margin-top: 6px;
+  position: relative;
+}
+
+.login-data:last-child {
+  margin-right: 0;
+}
+
+.login-data:last-child::after {
+  display: none;
+}
+
+
+.login-data::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #707070;
+  height: 100%;
+  top: 5px;
+  right: -12%;
+}
+
+.display-hide {
+  display: none;
+}
+
+.login-col {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.login-col:last-child .label-content {
+  margin-left: 0;
+}
+
+
+.label-content {
+  float: left;
+  width: 100%;
+  margin-bottom: 31px;
+}
+
+.label-content .user-labels {
+  width: 100%;
+  float: left;
+}
+
+.label-content .user-labels img {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
+}
+
+.label-content .user-labels span {
+  float: left;
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 5px;
+  font-family: "Raleway-Regular";
+}
+
+.login-col .user-input {
+  float: left;
+  width: 286px;
+  height: 40px;
+  border: 1px solid #B2B2B2;
+  border-radius: 0;
+  margin-top: 3px;
+  padding: 5px;
+  font-family: "Raleway-Regular";
+}
+
+.error-text {
+  width: 100%;
+  color: red;
+  font-size: 14px;
+  display: none;
+  font-family: "Raleway-Regular";
+}
+
+.submit-btn {
+  float: left;
+  width: 286px;
+  height: 40px;
+  background-color: #557A35;
+  color: #ffffff;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  font-family: "Raleway-Semibold";
+}
+
+.otp-btn {
+  float: left;
+  width: 286px;
+  height: 40px;
+  margin-left: 0;
+  background-color: #535353;
+  color: #ffffff;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  font-family: "Raleway-Semibold";
+
+}
+
+#otp-modal .modal-dialog {
+  max-width: 40%;
+}
+
+#otp-modal .modal-header {
+  padding-top: 16px;
+}
+
+.otp-content {
+  text-align: center;
+}
+
+.otp-title {
+  color: #603312;
+  font-size: 25px;
+  line-height: 33px;
+  font-family: "Raleway-Bold";
+  text-align: center;
+  width: 100%;
+}
+
+#otp-modal .close {
+  position: absolute;
+  right: 10px;
+}
+
+.otp-fields {
+  color: #603312;
+  font-size: 18px;
+  font-family: "Raleway-Regular";
+  width: 100%;
+}
+
+.otp-pwd {
+  width: 200px;
+  height: 34px;
+  border: 1px solid #B2B2B2;
+  border-radius: 0;
+  margin-top: 3px;
+  padding: 6px;
+  font-family: "Raleway-Regular";
+}
+
+.verify-btn {
+  width: 200px;
+  height: 34px;
+  border: 1px solid #B2B2B2;
+  border-radius: 0;
+  margin-top: 15px;
+  font-family: "Raleway-Semibold";
+  background-color: #535353;
+  color: #ffffff;
+}
+
+.resend-text {
+  width: 100%;
+  text-align: center;
+}
+
+.resend-text .resend-btn {
+  display: inline-block;
+  width: 200px;
+  height: 34px;
+  border-radius: 0;
+  margin-top: 15px;
+  font-family: "Raleway-Semibold";
+  color: #535353;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+/***login page end****/
+
+
+/***Crop health monitoring page start****/
+
+.farmer_info {
+  width: 100%;
+  display: flex;
+  background-color: #F9F8F6;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.farmer_info .text-content {
+  display: flex;
+  margin-right: 20px;
+}
+
+.farmer_info .text-content .text-type {
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #A25723;
+  font-family: "Raleway-Bold";
+}
+
+.farmer_info .text-content .text-val {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Raleway-Semibold";
+}
+
+.monitoring-years {
+  width: 100%;
+  position: relative;
+}
+
+.monitoring-years .select-year {
+  right: 0;
+}
+
+.health-monitor-data {
+  margin-top: 70px;
+}
+
+.yearsidebar ul {
+  padding: 20px 20px 20px 20px;
+  margin: 0;
+  background-color: #f7f6f3;
+  transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+
+.yearsidebar ul .month {
+  font-family: "Raleway-Bold";
+  color: #603312;
+  font-size: 20px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.yearsidebar ul .nav-item {
+  list-style-type: none;
+  margin-left: 0px;
+  position: relative;
+}
+
+.yearsidebar ul .nav-item .nav-link {
+  font-family: "Raleway-Semibold";
+  color: #557A35;
+  font-size: 16px;
+  padding: 10px 10px 10px 30px;
+  display: block;
+  border-radius: 0;
+  position: relative;
+}
+
+.yearsidebar ul .nav-item .nav-link:before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 10px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #557A35;
+  z-index: 1;
+}
+
+.yearsidebar ul .nav-item .nav-link:hover {
+  background-color: #d8ddd3;
+}
+
+.yearsidebar ul .nav-item .nav-link.active {
+  background-color: #d8ddd3;
+}
+
+#myTabContent .tab-pane {
+  padding: 40px;
+  background-color: #f7f6f3;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Raleway-Medium";
+}
+
+#myTabContent .tab-pane img {
+  max-width: 100%;
+}
+
+/***Crop health monitoring page end****/
+
+
+@media only screen and (max-width: 1366px) {
+  .about-main {
+    .abtinstimg {
+      margin-left: -27%;
+    }
+
+    .banner-sec {
+      max-height: 450px;
+    }
+  }
+
+  .login-section {
+    margin-top: -75px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .home-main {
+    .hm-bannersec {
+      .researcharea {
+        bottom: 70px;
+        transform: translateX(-25%);
+      }
+
+      .technologyarea {
+        top: 37%;
+        right: 160px;
+      }
+
+      .assistance-sec {
+        right: 100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-main .hm-bannersec .servicesarea {
+    top: 47%;
+    left: 18%;
+  }
+
+  .home-main .hm-bannersec {
+    margin-bottom: 50px;
+  }
+
+  .home-main .hm-bannersec .researcharea {
+    bottom: 80px;
+    transform: translateX(-32%);
+  }
+
+  .about-main .abtinstimg {
+    margin-left: -35%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .home-main {
+    .hm-bannersec {
+      margin-bottom: 100px;
+
+      .technologyarea {
+        top: 39%;
+        right: 90px;
+      }
+
+      .servicesarea {
+        width: 480px;
+        height: 480px;
+      }
+
+      .assistance-sec {
+        right: 50px;
+        top: 78%;
+      }
+
+      .researcharea {
+        bottom: 0;
+        transform: translateX(-20%);
+      }
+    }
+  }
+
+  .about-main .abtinstimg {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .publications-main {
+    .bannersec {
+      max-height: 430px;
+    }
+
+    .heading {
+      margin-bottom: 40px;
+    }
+  }
+
+  .newsevents-listingmain {
+    .bannersec {
+      max-height: 350px;
+    }
+
+    .heading {
+      margin-bottom: 40px;
+    }
+  }
+
+  .ogfarm-main.smartsgriculture .tabslist-wrapper {
+    left: 0 !important;
+  }
+
+  .ogfarm-main.smartsgriculture {
+    margin: 0px 70px 30px 0 !important;
+  }
+
+  .ogfarm-main .bgimgwrapper {
+    display: none;
+  }
+
+  .about-main {
+    .banner-sec {
+      max-height: 310px;
+    }
+
+    .abtinstimg {
+      width: 100%;
+      margin-left: -0%;
+    }
+
+    .abtrightimg {
+      width: 100%;
+    }
+
+    .chsubheading {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    &.chairman .chcontentarea .chsubheading {
+      font-size: 22px;
+      line-height: 34px;
+    }
+  }
+
+  .chsubheading {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .home-main {
+    .about-newsevents {
+      margin: -70px 0 0 0;
+    }
+
+    .area-heading {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .hm-bannersec {
+      .impactareas {
+        padding: 60px 70px 0 185px;
+        top: 46%;
+      }
+
+      .technologyarea {
+        top: 40%;
+        right: 10px;
+        width: 390px;
+        height: 370px;
+        padding: 53px 50px 0 160px;
+      }
+
+      .researcharea {
+        transform: translateX(0%);
+      }
+
+      .servicesarea {
+        top: 48%;
+        width: 480px;
+        height: 440px;
+        padding: 60px 100px 0 110px;
+      }
+
+      .assistance-sec {
+        right: 45px;
+        width: 285px;
+      }
+
+      .inputbox {
+        &.fornabard {
+          margin: -20px 0 0 25px;
+          padding: 25px 10px 0 20px;
+
+          .inputs {
+            &:last-child {
+              &:after {
+                height: 49px;
+                bottom: -21px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .info-content {
+    padding: 25px 10px 25px 20px;
+  }
+
+  .user-info-data.test-info {
+    margin-right: 20px;
+  }
+
+  .user-info-data .text {
+    margin-right: 10px;
+  }
+
+  .soil-graph {
+    margin-top: 30px;
+    padding: 0 0px 0 25px;
+  }
+
+  .soil-data {
+    padding: 0px 5px 25px 10px;
+  }
+
+  #myModal .modal-dialog {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .newsevents-listingmain .events-card {
+    border-right: none;
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+
+    &:nth-child(4n) {
+      border-right: none;
+    }
+  }
+
+  .about-main {
+    .about-introsec.council {
+      .greybox {
+        background-color: #fff;
+        border-bottom: none;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &.chairman {
+      .iconsec {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .svgimg {
+        width: 60%;
+      }
+    }
+
+    .greybox {
+      width: 100%;
+      height: auto;
+
+      &:nth-last-child(2) {
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .publications-main .bannersec {
+    max-height: 250px;
+  }
+
+  .about-main {
+    .abtinstimg {
+      margin-left: 0;
+    }
+
+    .banner-sec {
+      max-height: 240px;
+    }
+
+    &.chairman {
+      .svgimg {
+        width: 80%;
+      }
+    }
+
+    &.contactus {
+      .contactcard .contentbox {
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .home-main {
+    .about-newsevents {
+      margin: 170px 0 0 0;
+    }
+
+    .hm-bannersec {
+      .impactareas {
+        top: 60%;
+        left: -160px;
+      }
+
+      .servicesarea {
+        left: 25%;
+        top: 63%;
+      }
+
+      .assistance-sec {
+        transform: translateX(0%);
+        right: 0;
+        top: auto;
+        bottom: -275px;
+        top: auto;
+        position: relative;
+
+        width: 100%;
+      }
+
+      .technologyarea {
+        right: -20%;
+        top: 55%;
+        width: 350px;
+        height: 350px;
+        padding: 50px 50px 0 130px;
+
+        &:before {
+          width: 200px;
+          height: 200px;
+          top: -17px;
+          left: -85px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .researcharea {
+        transform: translateX(63%);
+        bottom: -170px;
+        right: 270px;
+        padding: 160px 40px 0 100px;
+      }
+
+      .inputbox {
+        &.fornabard {
+          padding: 16px 10px 0 20px;
+
+          .inputs {
+            &:last-child {
+              &:after {
+                height: 30px;
+                bottom: -2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sec-two-content {
+    padding: 24px 24px 28px;
+  }
+
+  .about-test {
+    display: block;
+  }
+
+  .user-info-data.test-info {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .select-year {
+    position: relative;
+    right: unset;
+    top: unset;
+    float: left;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+
+  #myModal .modal-dialog {
+    max-width: 90%;
+  }
+
+  #modalCarousel .crop-detail {
+    padding: 0 50px;
+  }
+
+  .prev-icon .carousel-control-prev-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .next-icon .carousel-control-next-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .login-section {
+    margin-top: -28px;
+  }
+
+  .login-content {
+    width: 90%;
+    padding: 35px 40px 40px;
+  }
+
+  .login-data {
+    width: calc((100% - 55px) / 2);
+    margin-right: 55px;
+  }
+
+  .login-data::after {
+    right: -29px;
+  }
+
+  .login-col .user-input {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .otp-btn {
+    width: 100%;
+  }
+
+  #otp-modal .modal-dialog {
+    max-width: 50%;
+  }
+
+  .yearsidebar .month {
+    display: none;
+  }
+
+  .yearsidebar ul .nav-item.nav-active {
+    display: block;
+  }
+
+  .yearsidebar ul .nav-item {
+    display: none;
+  }
+
+  .yearsidebar .mb-dropdown .dropdown-icon::after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    right: 38px;
+    background-image: url(/assets/kiaar-web/images/nabard/dropdown-arrow.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 7px;
+    background-size: 12px;
+    transition: 0.2s all;
+    pointer-events: auto;
+  }
+
+  .yearsidebar.mb-dropup .month {
+    display: block !important;
+  }
+
+  .yearsidebar.mb-dropup .nav-item {
+    display: block;
+  }
+
+  .yearsidebar.mb-dropup .mb-dropdown .dropdown-icon::after {
+    transform: rotate(180deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .newsevents-listingmain {
+    .bg-grey {
+      padding: 20px 30px 10px 30px;
+    }
+
+    .events-card {
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 30px 20px 30px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .dirctmsgmain {
+    &.foundingmain {
+      .greymsgsec {
+        padding: 0;
+      }
+
+      .heading {
+        text-align: center;
+      }
+
+      .manimg {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        display: block;
+      }
+    }
+
+    .membersbox {
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    .manhead {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    .manquote {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 10px 0;
+    }
+
+    .greymsgsec {
+      padding: 0px;
+      margin: 20px 0 20px 0;
+      background-image: none;
+    }
+
+    .msghead {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .ogfarm-main.smartsgriculture {
+    margin: 40px 0 30px 0 !important;
+  }
+
+  .ogfarm-main.smartsgriculture .tabslist-wrapper {
+    position: relative !important;
+    top: 0 !important;
+    margin-bottom: 100px;
+    border-radius: 10px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .contactform {
+    margin-top: 30px;
+  }
+
+  .home-main {
+    .hm-bannersec {
+      max-height: max-content;
+      margin-bottom: 20px;
+
+      .mobhmbanner {
+        display: block;
+      }
+
+      .deskhmbanner {
+        display: none;
+      }
+
+      .about-introsec {
+        margin: 70px 0 50px 0;
+      }
+
+      img {
+        max-height: initial;
+      }
+
+      .impactareas,
+      .servicesarea,
+      .technologyarea,
+      .assistance-sec,
+      .researcharea {
+        top: auto;
+        left: 0;
+        position: relative;
+        width: 100%;
+        padding: 30px 50px;
+        border: 0;
+        border-radius: 0;
+        height: auto;
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      .assistance-sec {
+        padding: 30px;
+        bottom: 0;
+        display: block;
+        text-align: left;
+        padding: 30px 50px;
+
+        .imgarea {
+          float: left;
+          margin: 0;
+        }
+
+        .contentarea {
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .researcharea {
+        bottom: 0;
+        right: 0;
+
+        .impact-list li {
+          width: 50%;
+        }
+      }
+
+      .technologyarea .impact-list li {
+        width: 65%;
+      }
+
+      .inputbox {
+        &.fornabard {
+          margin: -3px 0 0 25px;
+          padding: 10px 10px 0 20px;
+
+          .inputs {
+            &:last-child {
+              &:after {
+                height: 30px;
+                bottom: -26px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .about-newsevents {
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+
+  .soilimg {
+    width: 100%;
+  }
+
+  .about-main .about-introsec.council::before {
+    display: none;
+  }
+
+  .about-introsec.contactus {
+    margin: 0;
+
+    .bg-grey {
+      margin-top: 15px;
+    }
+  }
+
+  .about-newsevents .news-sec {
+    margin-top: 20px;
+  }
+
+  .about-main .contactus {
+    .width50 {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+
+    .contactcard {
+      display: block;
+
+      .imgbox {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .contentbox {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .about-main {
+    .links-sec {
+      margin-top: 20px;
+    }
+
+    .chsubheading {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &.chairman {
+      .iconsec {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+      }
+
+      .svgimg {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .newsevents-listingmain .heading {
+    margin-bottom: 30px;
+  }
+
+  .publications-main {
+    margin: 0 0 50px 0;
+
+    .bannersec {
+      max-height: 180px;
+    }
+
+    .heading {
+      margin-bottom: 30px;
+    }
+
+    .publication-card {
+      padding: 20px;
+    }
+
+    .maincontentarea {
+      margin: 0;
+    }
+
+    .pbheading {
+      font-size: 18px;
+      line-height: 36px;
+    }
+
+    .visitors-area {
+      padding: 20px;
+    }
+
+    .visitors-list li {
+      padding: 20px 0 20px 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .about-newsevents {
+    margin: 0 0 60px 0;
+
+    .read-more-link {
+      margin-bottom: 30px;
+      display: block;
+    }
+  }
+
+  .about-main {
+    .links-sec {
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .chsubheading {
+      text-align: center;
+    }
+
+    .chparahead {
+      text-align: center;
+    }
+
+    &.chairman {
+      .iconsec {
+        justify-content: center;
+      }
+
+      .chcontentarea {
+        padding: 20px;
+
+        .chsubheading {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+
+      .unilogo {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    .banner-sec {
+      max-height: 200px;
+
+      &.contactbannersec {
+        max-height: 150px;
+      }
+    }
+
+    .about-introsec {
+      margin: 30px 0 30px 0;
+
+      &.general-body {
+        margin: 0 0 30px 0;
+      }
+
+      &.bottom {
+        margin-top: 0;
+      }
+
+      .heading {
+        text-align: center;
+      }
+    }
+
+    .greybox {
+      display: block;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+
+      .imgbox {
+        width: 100%;
+        display: block;
+      }
+
+      .contentbox {
+        width: 100%;
+      }
+    }
+  }
+
+  .home-main {
+    .area-heading {
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    .hm-bannersec {
+      margin-bottom: 30px;
+
+      .imgarea {
+        width: 50px;
+
+        img {
+          width: 95%;
+        }
+      }
+
+      .contentarea {
+        width: calc(100% - 50px);
+        padding-left: 5px;
+      }
+
+      .impactareas {
+        content: "";
+        background-color: transparent;
+        background-image: url(/assets/kiaar-web/images/homepage/yellow-mobg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        padding: 100px 30px;
+        margin-top: -100px;
+      }
+
+      .servicesarea {
+        background-color: transparent;
+        background-image: url(/assets/kiaar-web/images/homepage/orange-mobg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -60px;
+        padding: 60px 30px 90px 30px;
+        background-position: center;
+      }
+
+      .technologyarea {
+        background-color: transparent;
+        background-image: url(/assets/kiaar-web/images/homepage/green-mobg.svg);
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -60px;
+        padding: 70px 30px 40px 30px;
+      }
+
+      .researcharea {
+        padding: 30px;
+      }
+
+      .assistance-sec {
+        .contentarea {
+          width: 100%;
+        }
+
+        .subheading {
+          margin: 0;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+
+  .ogfarm-main .tot-subhead {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .ogfarm-main.smartsgriculture {
+    margin: 40px 0 20px 0 !important;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .sec-two-main {
+    margin-top: 20px;
+  }
+
+  .sec-two-content {
+    padding: 15px 15px 18px;
+  }
+
+  .search-content .search-col {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .search-by-data .btn-search {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .search-by-data .btn-fields {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-vilaage-maps {
+    margin-bottom: 50px;
+  }
+
+  .about-village-detail {
+    margin-top: 30px;
+  }
+
+  .farmer-table td .farmer-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .about-vilaage-maps .pr-0 {
+    padding-right: 15px !important;
+  }
+
+  .about-vilaage-maps .pl-0 {
+    padding-left: 15px !important;
+  }
+
+  .pagination {
+    font-size: 14px;
+    margin-right: -25px !important;
+  }
+
+  .sec-two-soiltest {
+    margin-top: 10px;
+  }
+
+  .info-content {
+    padding: 20px 10px 20px 15px;
+  }
+
+  .about-test {
+    display: block;
+  }
+
+  .user-info-data.test-info {
+    width: auto;
+    margin-right: 0px;
+  }
+
+  .user-info-data.test-info .text {
+    width: 115px;
+  }
+
+  .user-info-data .text {
+    margin-right: 12px;
+    font-size: 14px;
+    width: 115px;
+  }
+
+  .user-info-data.test-info .text-value {
+    width: calc(100% - 127px);
+  }
+
+  .user-info-data .text-value {
+    font-size: 14px;
+  }
+
+  .soil-graph {
+    padding: 0;
+    margin: 0;
+  }
+
+  #graphdiv {
+    height: 650px;
+    display: none;
+  }
+
+  .soil-data {
+    display: block;
+    padding: 0 15px 20px;
+    margin-top: 30px;
+  }
+
+  .table-data {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .table-data:not(:first-child) .soilinfo-table,
+  .soilinfo-table th,
+  .soilinfo-table td {
+    border-top: 0;
+    font-size: 14px;
+  }
+
+  // .soilinfo-table th, .soilinfo-table td{
+  // padding: 9px 12px;
+  // }
+
+  .sec-three-aboutcrop {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+
+  .select-year .dropdown-select {
+    width: 100%;
+  }
+
+  .crop-year-content {
+    margin: 30px 15px 0;
+    padding: 15px 10px 0;
+  }
+
+  .crop-box {
+    margin-bottom: 30px;
+  }
+
+  #crop-modal .modal-dialog {
+    max-width: 100%;
+  }
+
+  .close-icon {
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+  }
+
+  .crop-modal .modal-dialog {
+    margin: 20px;
+  }
+
+  .month-row {
+    padding: 40px 0 0;
+  }
+
+  .crop-month-content {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .select-month {
+    position: relative;
+    right: unset;
+    top: unset;
+    float: left;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .select-month .dropdown-select {
+    width: 100%;
+  }
+
+  .modal-data {
+    padding: 30px 10px 10px;
+  }
+
+  .modal-data .modal-body {
+    padding-top: 26px;
+  }
+
+  #myModal .modal-dialog {
+    max-width: 100%;
+  }
+
+  #myModal .subheading {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  #modalCarousel .crop-detail {
+    padding: 0 20px;
+  }
+
+  .prev-icon .carousel-control-prev-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .next-icon .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+
+  .login-section {
+    margin-bottom: 50px;
+  }
+
+  .login-content {
+    padding: 20px 20px 15px;
+  }
+
+  .login-col {
+    width: 100%;
+  }
+
+  .login-data {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .login-data::after {
+    right: unset;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    height: unset;
+    width: 100%;
+  }
+
+  .login-col:last-child .label-content {
+    margin-left: 0;
+  }
+
+  .submit-btn {
+    margin-bottom: 30px;
+  }
+
+  #otp-modal .modal-dialog {
+    max-width: 100%;
+  }
+
+  .otp-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .farmer_info {
+    display: block;
+    padding: 15px;
+  }
+
+  .farmer_info .text-content {
+    width: 100%;
+  }
+
+  .health-monitor-data {
+    margin-top: 30px;
+  }
+
+  .yearsidebar ul {
+    padding: 15px;
+  }
+
+  .yearsidebar ul .month {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 360px) {
+  .login-section {
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .impactareas .impact-list li {
+    height: auto;
+  }
+
+  .home-main .hm-bannersec .impact-list li {
+    width: 100% !important;
+
+    br {
+      display: none;
+    }
+  }
+
+  .login-section {
+    margin-top: -20px;
+  }
+
+  .pagination {
+    font-size: 12px;
+    margin-right: -35px !important;
+  }
+}
+
+.kiaarStaffPage.about-main .about-introsec {
+  margin-bottom: 50px;
+}
+
+.kiaarStaffPage.about-main .heading {
+  margin-bottom: 0;
+  justify-content: normal;
+  align-items: normal;
+}
+
+.kiaarStaffPage.about-main .greybox {
+  padding: 40px;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+  justify-content: normal;
+  align-items: normal;
+  border-bottom: 0px solid #ddd;
+}
+
+.kiaarStaffPage.about-main .greybox .imgbox {
+  justify-content: normal;
+  width: 160px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.kiaarStaffPage.about-main .greybox .imgbox img {
+  width: 100%;
+}
+
+.kiaarStaffPage.about-main .general-head {
+  font-size: 20px;
+  line-height: 150%;
+  color: #a25723;
+  font-family: "Raleway-Bold";
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.kiaarStaffPage.about-main .designationsKiaar {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Raleway-Medium";
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.kiaarStaffPage.about-main .desgn {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Raleway-Regular";
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.kiaarStaffPage.about-main .contentbox ul {
+  padding-left: 40px;
+}
+
+.kiaarStaffPage.about-main .contentbox ul li {
+  list-style: disc;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Raleway-Regular";
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.kiaarStaffPage .showMoreData:hover,
+.kiaarStaffPage .showMoreData {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Raleway-Medium";
+  text-decoration: none;
+}
+
+.kiaarStaffPage .contentBoxHidden {
+  height: 0;
+  overflow: hidden;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.kiaarStaffPage .contentBoxHidden.show {
+  height: auto;
+}
+
+.kiaarStaffPage .actionBUttons {
+  overflow: hidden;
+}
+
+.kiaarStaffPage hr {
+  border-color: #dddddd;
+}
+
+.about-main .greybox .contentbox {
+  padding-left: 0;
+}
+
+.socialConnects a {
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Raleway-Medium";
+  margin-right: 40px;
+  width: auto !important;
+  display: inline-block;
+  word-break: break-all;
+}
+
+.socialConnects a:hover {
+  text-decoration: none;
+}
+
+.socialConnects a img {
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+
+.kiaarStaffPage.about-main .desgn a,
+.kiaarStaffPage.about-main .designationsKiaar a {
+  color: #006699;
+  font-family: "Raleway-Medium";
+  width: auto;
+  float: none;
+}
+
+.imgbox .socialConnects a img {
+  vertical-align: middle;
+  margin-right: 0px;
+  width: 20px !important;
+}
+
+.imgbox .socialConnects a {
+  float: none;
+  margin-right: 0;
+  margin: 0 5px;
+  width: auto !important;
+}
+
+.imgbox .socialConnects {
+  margin-top: 20px;
+}
+
+@media(max-width:1200px) {
+  .socialConnects a {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:1130px) {
+  .about-main .greybox .contentbox {
+    width: 60%;
+  }
+}
+
+@media(max-width:767px) {
+  .kiaarStaffPage.about-main .greybox {
+    padding: 15px;
+  }
+
+  .about-main .greybox .contentbox {
+    width: 100%;
+  }
+
+  .kiaarStaffPage.about-main .greybox .imgbox {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .kiaarStaffPage .container {
+    max-width: 100%;
+  }
+
+  .kiaarStaffPage.about-main .general-head {
+    font-size: 18px;
+  }
+
+  .kiaarStaffPage.about-main .desgn {
+    text-align: justify;
+  }
+
+  .kiaarStaffPage.about-main .greybox .imgbox img {
+    width: 160px;
+  }
+}
+
+
+.kiaarSidebar ul {
+  padding: 20px 20px 20px 20px;
+  margin: 0;
+  background-color: #f7f6f3;
+  transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+
+.kiaarSidebar ul.affix {
+  position: fixed;
+  top: 15px;
+  z-index: 99;
+  width: 21%;
+}
+
+.mobileSelectBOx.affix {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.kiaarSidebar ul li {
+  list-style: disc;
+  position: relative;
+  padding-left: 30px;
+}
+
+.kiaarSidebar ul li:before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 10px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #557A35;
+}
+
+.kiaarSidebar ul li::marker {
+  display: none;
+  content: '';
+}
+
+.kiaarSidebar ul li:hover,
+.kiaarSidebar ul li.active {
+  background-color: #d8ddd3;
+  font-family: "Raleway-Bold";
+}
+
+.kiaarSidebar ul li a {
+  font-family: "Raleway-Semibold";
+  color: #557A35;
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+}
+
+.kiaarSidebar ul li a:hover {
+  text-decoration: none;
+  transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+
+.mobileSelectBOx {
+  display: none;
+}
+
+@media(max-width:1600px) {
+  .about-main .kiaaarData .greybox .contentbox {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about-main .kiaaarData .greybox .contentbox {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .about-main .kiaaarData .greybox .contentbox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .kiaarSidebar {
+    padding-right: 15px !important;
+  }
+
+  .mobileSelectBOx {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .mobileSelectBOx:hover {
+    cursor: pointer;
+  }
+
+  .kiaarSidebar ul {
+    height: 0;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    z-index: 99;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .kiaarSidebar ul.affix {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 999;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 0;
+    margin-top: 0px;
+    display: none;
+  }
+
+  .mobileSelectBOx {
+    padding: 10px 30px 10px 20px;
+    background-color: #f7f6f3;
+    background: url('../../../assets/kiaar-web/images/selectarrow.png') #f7f6f3 no-repeat;
+    background-position: right 15px top 20px;
+    background-size: 7px;
+    box-shadow: 0px 0px 6px #00000029;
+  }
+
+  .kiaarSidebar ul.openPanel {
+    height: 70vh;
+    display: block;
+  }
+}
+
+.events-card {
+  .newscard {
+    .news-head {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+.thankYouModal {
+  padding-right: 0 !important;
+
+  .modal-body {
+    text-align: center;
+
+    h3 {
+      font-family: "Raleway-Semibold";
+      color: #000;
+      font-size: 18px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+
+    .close {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #A25723;
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 30px;
+      float: none;
+      opacity: 1;
+      line-height: 21px;
+      border-radius: 50px;
+      margin-bottom: 40px
+    }
+  }
+}
+
+.rightlogowrapper {
+  img {
+    width: 110px;
+  }
+}
+
+.about-main.chairman .chsubheading .subtext {
+  color: #557A35;
+}
+
+.home-main .subheading a,
+.home-main .subheading a:hover {
+  color: #603312;
+}
+
+section.collaborator-sec .five .box .img img {
+  width: 85% !important;
+}
+
+.categoryDiff:before {
+  display: none;
+}
+
+.categoryDiff {
+  font-family: "Raleway-Bold";
+  color: #603312;
+  font-size: 20px;
+  padding: 10px 0px !important;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.categoryDiff:hover {
+  background: transparent !important;
+}
+
+.green-link,
+.dirctmsgmain p a {
+  color: #006699;
+}

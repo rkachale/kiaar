@@ -1,0 +1,37 @@
+#profile_image_demo {
+    width:400px;
+    margin-top:30px;
+}
+.croppie-container {
+    width: 100% !important;
+    height: 100%;
+}
+.croppie-input {
+    overflow: visible;
+    font-size: 25px;
+    background: #e8e8e8;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.croppie-img:hover
+{
+    border: 3px solid #bbbbc4;
+}
+.croppie-img
+{
+    border: 3px solid #f6f6f6;
+}
+#croppie-thumbnail, #croppie-profile, #croppie_upload_image
+{
+    display: none;
+}
+#croppie-image
+{
+    cursor: pointer;
+}
+@media only screen and (min-width: 576px) {
+    .croppie-container .cr-boundary {
+            width: 95% !important;
+    }
+}
