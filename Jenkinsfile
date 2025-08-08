@@ -16,6 +16,7 @@ pipeline {
           docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-kiaar') {
             def img = docker.build("${IMAGE_REPO}:${TAG}")
             img.push()
+            img.push('latest')  // push latest tag too
           }
         }
       }
@@ -36,6 +37,7 @@ pipeline {
             }
         }
     }
+
 
   }
   post {
