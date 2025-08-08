@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: php-app
-        image: rohitsvv/php-app:latest
+        image: rohitsvv/php-app:20250808_113826_cafbb9a
         imagePullPolicy: Always
         ports:
         - containerPort: 80
