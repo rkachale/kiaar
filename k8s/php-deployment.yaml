@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: php-app
-        image: rohitsvv/php-app:latest
+        image: rohitsvv/php-app:REPLACED_BY_CI   # <-- Jenkins sets tag here
         imagePullPolicy: Always
         ports:
         - containerPort: 80

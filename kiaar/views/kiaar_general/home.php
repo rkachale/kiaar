@@ -75,7 +75,7 @@
                                 <img data-lazy="<?=base_url()?>/assets/kiaar-web/images/homepage/services1.svg" class="lazyloadimg" src="<?=base_url()?>/assets/kiaar-web/images/homepage/services1.svg" alt="">
                             </div>
                             <div class="contentarea">
-                                <h3 class="area-heading text-white">Soil testing</h3>
+                                <h3 class="area-heading text-white">Soil testing 0</h3>
                             </div>
                         </a>
                     </li>
