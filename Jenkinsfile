@@ -22,18 +22,21 @@ pipeline {
     }
 
     stage('Update Manifests & Push') {
-      steps {
-        sh """
-          set -e
-          sed -i 's|^\\s*image:\\s*${IMAGE_REPO}:.*|        image: ${IMAGE_REPO}:${TAG}|' ${MANIFEST}
-          git config user.name "${GIT_USER}"
-          git config user.email "${GIT_EMAIL}"
-          git add ${MANIFEST}
-          git commit -m "ci: deploy ${IMAGE_REPO}:${TAG}"
-          git push origin HEAD:main
-        """
-      }
+        steps {
+            withCredentials([usernamePassword(credentialsId: 'github-kiaar', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
+            sh """
+                set -e
+                sed -i 's|^\\s*image:\\s*${IMAGE_REPO}:.*|        image: ${IMAGE_REPO}:${TAG}|' ${MANIFEST}
+                git config user.name "${GIT_USER}"
+                git config user.email "${GIT_EMAIL}"
+                git add ${MANIFEST}
+                git commit -m "ci: deploy ${IMAGE_REPO}:${TAG}"
+                git push https://${GIT_USER}:${GIT_PASS}@github.com/${GIT_USER}/kiaar HEAD:main
+            """
+            }
+        }
     }
+
   }
   post {
     success { echo "Updated ${MANIFEST} to ${IMAGE_REPO}:${TAG}. Argo CD will sync." }
